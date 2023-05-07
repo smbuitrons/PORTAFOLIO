@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>AUDIOVISUALES</title>
+		
+		<link href="porta.css" rel="stylesheet" type="text/css">
+<script src="build/jquery.js"></script>	
+	<script src="build/mediaelement-and-player.min.js"></script>
+	<link rel="stylesheet" href="build/mediaelementplayer.min.css" />
+        
+        <link rel="stylesheet" href="build/mejs-skins.css" />
+	</head>
+
+	<body>
+<body style="background:#03274A">
+	
+	<span style="color:#80BFFF">
+ 
+
+<div id="aside">
+  <p><img src="images/sariii.jpg" width="150">
+  	<strong>Sara Buitrón Serrano</strong> (Quito-Ecuador, 1989) artista multidisciplinaria con un enfoque en la literatura, la música y las artes visuales. Aunque se considera una intelectual, Sara no sigue el camino academicista, pues lo sensorial y lo emocional aparecen intensamente en su obra. Las pasiones personales de la artista -como la naturaleza, los derechos humanos o el fútbol- mueven la energía implicada en la creación de cada pieza. 
+  </p>
+</div>
+
+<div id="container">
+<div id="header"></div>
+<div id="nav">
+<ul>
+<li><a href="index.html">INICIO</a></li>
+<li><a href="foto.html">FOTOGRAFÍA</a></li>
+<li><a href="ilus.html">ILUSTRACIÓN</a></li>
+<li><a href="mix.html">CREACIONES MISCELÁNEAS</a></li>
+<li><a href="audioyvideo.html">AUDIOVISUALES</a></li>
+</ul>
+</div>
+
+<div id="videocontainer">
+	<div align="middle">
+<script>
+$('audio,video').mediaelementplayer({
+	success: function(player, node) {
+		$('#' + node.id + '-mode').html('mode: ' + player.pluginType);
+	}
+});
+
+</script>
+
+<!--aquí va la información principal-->
+<p><strong>Video experimental con el modo de visión nocturna. Música de muestra de Videopad, aplicación de edición de video</strong><br /><br />
+<video class="mejs-wmp" height="320" src="media/hallazgo.mp4" type="video/mp4" 
+	id="player1" poster="media/naomi.jpg" 	controls="controls" preload="none"></video></p>
+	
+<p><strong>Fragmento de la interpretación musical del artista Alejandro Serrano Mera en el III Recital Voces de Mujer, organizado por la escritora y gestora cultural Sara Serrano Albuja el 8 de marzo de 2007</strong>
+	<video class="mejs-wmp" height="320" src="media/Secuenciaa.mp4" type="video/mp4" 
+	id="player1" poster="media/alejito.png" 	controls="controls" preload="none"></video></p>
+	
+	</div>
+
+<div id="footer">SARA BUITRÓN SERRANO smbuitrons@yahoo.com 2015</div>
+
+</div>
+	</body>
+</html>
